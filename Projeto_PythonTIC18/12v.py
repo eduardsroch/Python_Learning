@@ -122,7 +122,9 @@ def obter_dados_estacao(ano_selecionado, estacao_selecionada):
 def gerar_graficos(ano_selecionado, estacao_selecionada, janela):
     # Obtendo os dados da estação selecionada
     dados_estacao = obter_dados_estacao(ano_selecionado, estacao_selecionada)
-
+    dados_estacao['DATA (YYYY-MM-DD)'] = pd.to_datetime(dados_estacao['DATA (YYYY-MM-DD)'])
+    dados_estacao['month'] = dados_estacao['DATA (YYYY-MM-DD)'].dt.month
+    print(dados_estacao['month'])
     # Criando a figura e os subplots
     fig, (ax, ax2) = plt.subplots(2, 1, figsize=(8, 6), dpi=100)
     
@@ -134,8 +136,7 @@ def gerar_graficos(ano_selecionado, estacao_selecionada, janela):
     # Tratando os dados de temperatura
     dados_estacao['TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)'] = dados_estacao['TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)'].apply(
         lambda x: None if x < -14 else x)
-    temp = dados_estacao.groupby(dados_estacao.index)['TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)'].mean()
-    temp.index = temp.index.strftime("%b")
+    temp = dados_estacao.groupby(dados_estacao['month'])['TEMPERATURA MÁXIMA NA HORA ANT. (AUT) (°C)'].mean()
     temp.plot(ax=ax, title="Temperatura Média Mensal", ylabel="Temperatura (°C)", color='blue')
     ax.set_xlabel("Mês", fontsize=12)
     ax.grid(True, linestyle='--', alpha=0.7)
@@ -144,8 +145,7 @@ def gerar_graficos(ano_selecionado, estacao_selecionada, janela):
     # Tratando os dados de precipitação
     dados_estacao['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'] = dados_estacao['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'].apply(
         lambda x: None if x < 0 else x)
-    prec = dados_estacao.groupby(dados_estacao.index)['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'].mean()
-    prec.index = prec.index.strftime("%b")
+    prec = dados_estacao.groupby(dados_estacao['month'])['PRECIPITAÇÃO TOTAL, HORÁRIO (mm)'].sum()
     prec.plot(ax=ax2, title="Precipitação Mensal", ylabel="Precipitação (mm)", color='green')
     ax2.set_xlabel("Mês", fontsize=12)
     ax2.grid(True, linestyle='--', alpha=0.7)

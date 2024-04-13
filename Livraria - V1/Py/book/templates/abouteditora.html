@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<style>
+
+.topo-site  {
+  background-color: black;
+  padding: 30px;
+}
+
+.mb-3 {
+    margin: 50px;
+    
+}
+
+#sobre-editora {
+    
+    padding: 70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica;
+    text-align: justify;
+    padding-top: 0;
+
+}
+
+#titulo-sobre {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+.btn-group {
+    align-items: right;
+    padding: 10px;
+    float: right;
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+</style>
+
+<main>
+<div id="sobre-editora">
+    
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <a href="{% url 'abouteditora'%}"><button type="button" class="btn btn-primary">Language: en</button></a>
+        <a href="{% url 'sobre'%}"><button type="button" class="btn btn-secondary">Idioma: pt-br</button></a>
+      </div>
+      <br>
+      <br>
+      <h4 id="titulo-sobre"> SOBRE A EDITORA</h4>
+    <p>
+        Editora 34 published its first title — What is Philosophy?, by Gilles Deleuze and Félix Guattari — in 1992. Today it has a catalogue of more than 500 titles, which covers the areas of Fiction, Philosophy, Arts, Literary Theory, Social Sciences, History, Psychology and Psychoanalysis, Economy, Music, Poetry, Children’s and Juvenile Literature, combining classical titles with up-to-date essays on contemporary themes.
+
+Together with fundamental names such as Dante, Cervantes and Goethe, and great writers of the XXth century, like Kafka and Brecht, Editora 34 has collections dedicated to Brazilian authors, both new and renowned, in prose as well as in poetry.
+The rich literature from Russia and East Europe is present in Coleção Leste, which has published works by Dostoevsky, Gogol, Tolstoy, Pushkin and Chekhov, among others, always translated from the original by the most recognized Brazilian translators, like Boris Schnaiderman and Paulo Bezerra.
+In the area of Philosophy, besides a number of titles by Deleuze and Guattari, Coleção Trans has published works by Jacques Rancière, Bruno Latour, Pierre Lévy and Paul Virilio, to cite a few names, drawing a broad panel of contemporary thinking.
+With over 25 titles published, Coleção Todos os Cantos offers biographies of important figures of Brazilian music, among which Dorival Caymmi, Luiz Gonzaga, Mario Reis, Jackson do Pandeiro and Mutantes, essays on different music styles – choro, samba, jazz, blues, rock etc. – and works on the history of Brazilian Popular Music by renowned researchers such as Carlos Calado, Zuza Homem de Mello and Jairo Severiano.
+Coleção Espírito Crítico constitutes an essential library on Literary Studies, with works by Antonio Candido, Alfredo Bosi, Roberto Schwarz, Gilda de Mello e Souza, Davi Arrigucci Jr., Georg Lukács, Erich Auerbach, Theodor Adorno and Walter Benjamin, among others.
+    </p>
+    <p>
+        For the young readers, Editora 34 combines works by foreign writers like Frances Hodgson Burnett, Gianni Rodari and Roald Dahl with the poetry of Brazilian authors such as Tatiana Belinky, Braulio Tavares and Duda Machado.
+Other distinguished books on the Publisher’s catalogue are the works on Brazilian Modernism by Aracy Amaral and Marta Rossetti Batista, the essays on Music and Popular Culture by José Ramos Tinhorão and Evaldo Cabral de Mello’s on the history of Brazilian Northeast, besides Luiz Carlos Bresser-Pereira’s works on Economy and development in Brazil.
+The name Editora 34 and the square displayed on the front page of its books come from a literature magazine, 34 Letras, that was published in Rio de Janeiro and whose publishers, together with a group from São Paulo, were the original founders of the company.
+The magazine had seven volumes published, from September 1988 to March 1990, and its title was inspired on the “magic square” that appears in a famous engraving from 1541 by Albrecht Dürer, and which is cited in Thomas Mann’s novel Doctor Faustus.
+That magic square is divided into 16 smaller squares, each one of them containing a number, from 1 to 16, the addition of which, in any direction, is always equal to 34. Although its origin is uncertain, it is known that the magic square comes from ancient times and it appears in different cultures, such as Chinese, Indian and Arab. In the case of Editora 34, it represents a symbol of the many different paths that might lead to a common purpose.
+    </p>
+</div>
+
+    {% endblock conteudo %}
+</main>

@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+
+<style>
+    .topo-site {
+        background-color: black;
+        padding: 30px;
+    }
+
+    .mb-3 {
+        margin: 50px;
+
+    }
+
+    #professor {
+
+        padding: 70px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, Helvetica;
+        text-align: justify;
+
+    }
+
+    #titulo-professor {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    #lista-item {
+        display: inline-block;
+        width: 45%;
+        margin: 0 2.5%;
+        vertical-align: top;
+    }
+</style>
+
+<main>
+    <div id="professor">
+        <h4 id="titulo-professor">Professor</h4>
+        <p>
+            A Editora 34 possui um setor específico para o atendimento ao professor, que cuida da relação entre a
+            editora e todos os profissionais de ensino que utilizam o livro como ferramenta de trabalho.
+
+            O objetivo principal deste serviço é facilitar o acesso do educador às informações sobre nossos livros,
+            auxiliando na escolha do material mais adequado a cada contexto didático.
+
+            A editora possui um amplo catálogo nas áreas de ciências humanas, artes visuais e cênicas, educação etc.,
+            que pode ser facilmente consultado no menu principal deste site, no campo "Áreas de interesse".
+
+            Os títulos voltados para o público infantil e juvenil constituem um catálogo à parte, que vale ser
+            consultado por quem entende a boa literatura como elemento não apenas auxiliar, mas fundamental na formação
+            da criança e do adolescente.
+
+            Para acessar o catálogo infanto-juvenil <a href="https://www.exemplo.com">clique aqui</a>.
+            <br>
+            <br>
+
+            O contato com o serviço de atendimento ao professor pode ser feito pelo e-mail
+            <b>professor@editora34.com.br</b> ou pelo <b>Tel (11) 3811-6777 </b> ou <b>Cel/WhatsApp (11) 91735-3468</b>
+            com Luciene Brandão.
+            <br><br>
+
+            Veja abaixo algumas sugestões indicativas, por ano letivo e idade:
+            <br>
+
+        </p>
+        <div class="container text-center">
+            <div class="row text-start">
+                <div class="col-6">
+                    <p><b>Anos letivos: pré-escola e 1º ao 3º
+                            Idade: sugestão de 5 a 8 anos </b></p>
+                    <ul>
+                        <li><a href="#" style="color: black;">A infância de Milton, de Haydé</a></li>
+                        <li><a href="#" style="color: black;">As férias de Milton, de Haydé</a></li>
+                        <li><a href="#" style="color: black;">A lógica do macaco, de Anna Flora</a></li>
+                        <li><a href="#" style="color: black;">Animais, de Arnaldo Antunes e Zaba Moreau</a></li>
+                        <li><a href="#" style="color: black;">Andar por aí, de Isabel Minhós Martins</a></li>
+                        <li><a href="#" style="color: black;">A árvore de sapatos, de Emília Lang</a></li>
+                        <li><a href="#" style="color: black;">Dadá, de Germano Zullo</a></li>
+                        <li><a href="#" style="color: black;">Dora e o Sol, de Veronica Stigger</a></li>
+                        <li><a href="#" style="color: black;">É mesmo você, de Isabel minhós Martins</a></li>
+                        <li><a href="#" style="color: black;">Herberto, de Laura Lawthorne</a></li>
+                        <li><a href="#" style="color: black;">Histórias com poesia, alguns bichos & cia., de Duda
+                                Machado</a></li>
+                        <li><a href="#" style="color: black;">Limeriques estapafúrdios, de Tatiana Belinky</a></li>
+                        <li><a href="#" style="color: black;">Limeriques das causas e efeitos, de Tatiana Belinky</a>
+                        </li>
+                        <li><a href="#" style="color: black;">Limeriques do bípede apaixonado, de Tatiana Belinky</a>
+                        </li>
+                        <li><a href="#" style="color: black;">Mandaliques, de Tatiana Belinky</a></li>
+                        <li><a href="#" style="color: black;">Marta e a bicicleta, de Germano Zullo</a></li>
+                        <li><a href="#" style="color: black;">Marta no país dos balões, de Germano Zullo</a></li>
+                        <li><a href="#" style="color: black;">Marta e o Polvo, de Germano Zullo</a></li>
+                        <li><a href="#" style="color: black;">Melhor amigo, de Gabi Mariano e Flávio Castellan</a></li>
+                        <li><a href="#" style="color: black;">Ora, pílulas!, de Tatiana Belimky</a></li>
+                        <li><a href="#" style="color: black;">O arame de Alexandre, de Sieb Posthuma</a></li>
+                        <li><a href="#" style="color: black;">O Caminho da gota d'água, de Natália Quinderé</a></li>
+                        <li><a href="#" style="color: black;">O retorno de Marta, de Germano Zullo</a></li>
+                        <li><a href="#" style="color: black;">O segredo é não ter medo, de Tatiana Belinky</a></li>
+                        <li><a href="#" style="color: black;">O toque de ouro, de Nathaniel Hawthorne</a></li>
+                        <li><a href="#" style="color: black;">Os pássaros, de Germano Zullo e Albertine</a></li>
+                        <li><a href="#" style="color: black;">Quadrinhas, de Tatiana Belinky</a></li>
+                        <li><a href="#" style="color: black;">Tudo tem a sua história, de Duda Machado</a></li>
+                        <li><a href="#" style="color: black;">Um balão do deserto, de Gabrielle Vincent</a></li>
+                        <li><a href="#" style="color: black;">Vermelho, de Maria Tereza</a></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <p><b>Anos letivos: 7º ao 9º
+                            Idade: sugestão de 12 a 14 anos</b></p>
+                    <ul>
+                        <li><a href="#" style="color: black;">As aves (teatro), de Aristófanes</a></li>
+                        <li><a href="#" style="color: black;">Aventuras de Alice no País das maravilhas, de Lewis
+                                Carroll</a></li>
+                        <li><a href="#" style="color: black;">A história do Senhor Sommer, de Patrick Süskind</a></li>
+                        <li><a href="#" style="color: black;">A botija, de Clotilde Tavares</a></li>
+                        <li><a href="#" style="color: black;">A Pedra do Meio-Dia ou Artur e Isadora, de Braulio
+                                Tavares</a></li>
+                        <li><a href="#" style="color: black;">A princesinha, de Frances Hodgson Burnett</a></li>
+                        <li><a href="#" style="color: black;">Cinco balas contra a América, de Jorge Araújo e Pedro S.
+                                Pereira</a></li>
+                        <li><a href="#" style="color: black;">Bíblia: as histórias fundadoras (do Gênesis ao Livro de
+                                Daniel), de Frédéric Boyer</a></li>
+                        <li><a href="#" style="color: black;">Cinco crianças e um segredo, de Edith Nesbit</a></li>
+                        <li><a href="#" style="color: black;">Comandante Hussi, de Jorge Araújo e Pedro S. Pereira</a>
+                        </li>
+                        <li><a href="#" style="color: black;">Contos Maravilhosos infantis e domésticos, de Jacob Grimm
+                                e Wilhelm Grimm</a></li>
+                        <li><a href="#" style="color: black;">O diário de Susie Anotações de uma garota de 16 anos, de
+                                Aidan Macfarlane e Ann McPherson</a></li>
+                        <li><a href="#" style="color: black;">Lisístrata ou A greve do sexo (comédia grega), de
+                                Aristófanes</a></li>
+                        <li><a href="#" style="color: black;">Migrando , de Mariana Chiesa Mateos</a></li>
+                        <li><a href="#" style="color: black;">O Clube dos Sete, de Marconi Leal</a></li>
+                        <li><a href="#" style="color: black;">O doente imaginário, de Molière</a></li>
+                        <li><a href="#" style="color: black;">O jardim secreto, de Frances Hodgson Burnett</a></li>
+                        <li><a href="#" style="color: black;">O homem que plantava árvores, de Jean Giono</a></li>
+                        <li><a href="#" style="color: black;">O pequeno lorde, de Frances Hodgson Burnett</a></li>
+                        <li><a href="#" style="color: black;">Os estrangeiros, de Marconi Leal</a></li>
+                        <li><a href="#" style="color: black;">Pluto ou Um deus chamado dinheiro (teatro), de
+                                Aristófanes</a></li>
+                        <li><a href="#" style="color: black;">Tumbu, de Marconi Leal</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6">
+                    <p><b>Ensino Médio
+                            Idade: sugestão de 15 a 17 anos</b>></p>
+                    <ul>
+                        <li><a href="#" style="color: black;">A gata, de Jutta Richter</a></li>
+                        <li><a href="#" style="color: black;">A invenção do mundo pelo Deus-curumim, de Braulio
+                                Tavares</a></li>
+                        <li><a href="#" style="color: black;">A pedra do meio dia, de Braulio Tavares</a></li>
+                        <li><a href="#" style="color: black;">A pequena marionete, de Gabrielle Vincent</a></li>
+                        <li><a href="#" style="color: black;">A Sereiazinha e outras histórias, de Hans Christian
+                                Andersen</a></li>
+                        <li><a href="#" style="color: black;">Cinco crianças e um segredo, de Edith Nesbit</a></li>
+                        <li><a href="#" style="color: black;">Fábulas por telefone, de Gianni Rodari</a></li>
+                        <li><a href="#" style="color: black;">Felizes quase sempre, de Antonio Prata</a></li>
+                        <li><a href="#" style="color: black;">Histórias da pré-história, de Alberto Moravia</a></li>
+                        <li><a href="#" style="color: black;">Histórias de Bulka, de Lev Tolstói</a></li>
+                        <li><a href="#" style="color: black;">Histórias para brincar, de Gianni Rodari</a></li>
+                        <li><a href="#" style="color: black;">Nuvem feliz, de Alice Ruiz</a></li>
+                        <li><a href="#" style="color: black;">O colecionador de palavras, de Edith Derdyk</a></li>
+                        <li><a href="#" style="color: black;">O flautista misterioso e os ratos de Hamelin, de Braulio
+                                Tavares</a></li>
+                        <li><a href="#" style="color: black;">O nascimento de Celestine, de Gabrielle Vincent</a></li>
+                        <li><a href="#" style="color: black;">O Patinho feio e outras histórias, de Hans Christian
+                                Andersen</a></li>
+                        <li><a href="#" style="color: black;">O poder da natureza, de Braulio Tavares</a></li>
+                        <li><a href="#" style="color: black;">Os estrangeiros, de Marconi Leal</a></li>
+                        <li><a href="#" style="color: black;">Pé de guerra: memórias de uma menina na guerra da Bahia,
+                                de Sonia Robatto</a></li>
+                        <li><a href="#" style="color: black;">Um balão no deserto, de Gabrielle Vincent</a></li>
+                        <li><a href="#" style="color: black;">Um dia, um cão, de Gabrielle Vincent</a></li>
+                        <li><a href="#" style="color: black;">Vazio, de Catarina Sobral</a></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <P><b>Ensino Médio
+                            Idade: sugestão de 15 a 17 anos</b></P>
+                    <ul>
+                        <li><a href="#" style="color: black;">Água funda, de Ruth Guimarães</a></li>
+                        <li><a href="#" style="color: black;">A dama de espadas, de Aleksandr Púchkin</a></li>
+                        <li><a href="#" style="color: black;">A dama do cachorrinho, de Anton P. Tchekhov</a></li>
+                        <li><a href="#" style="color: black;">A morte de Ivan Ilitch, de Lev Tolstói</a></li>
+                        <li><a href="#" style="color: black;">A noite dos cristais, de Luiz Fulano de Tal</a></li>
+                        <li><a href="#" style="color: black;">A Rosa Branca, de Inge Scholl</a></li>
+                        <li><a href="#" style="color: black;">Antonio, de Beatriz Bracher</a></li>
+                        <li><a href="#" style="color: black;">Capote e outras histórias, de Nikolai Cogól</a></li>
+                        <li><a href="#" style="color: black;">Dois Hussardos, de Lev Tolstói</a></li>
+                        <li><a href="#" style="color: black;">Duas narrativas fantásticas, de Fiódor Dostoiévski</a>
+                        </li>
+                        <li><a href="#" style="color: black;">Eu te darei o céu e outras promessas dos anos 60, de Ivana
+                                Arruda Leite</a></li>
+                        <li><a href="#" style="color: black;">La divina increnca, de Juó Bananére</a></li>
+                        <li><a href="#" style="color: black;">Malagueta, Perus e Bacanaço, de João Antônio</a></li>
+                        <li><a href="#" style="color: black;">Meio intelectual, meio de esquerda, de Antonio Prata</a>
+                        </li>
+                        <li><a href="#" style="color: black;">Memórias do subsolo, de Fiódor Dostoiévski</a></li>
+                        <li><a href="#" style="color: black;">Meu amor, de Beatriz Bracher</a></li>
+                        <li><a href="#" style="color: black;">Noites brancas, de Fiódor Dostoiévski</a></li>
+                        <li><a href="#" style="color: black;">O capote e outras histórias, de Nikolai Gógol</a></li>
+                        <li><a href="#" style="color: black;">O cupom falso, de Lev Tolstói</a></li>
+                        <li><a href="#" style="color: black;">O eterno marido, de Fiódor Dostoiévski</a></li>
+                        <li><a href="#" style="color: black;">O percevejo, de Vladímir Maiakóvski</a></li>
+                        <li><a href="#" style="color: black;">País sem chapéu, de Dany Laferrière</a></li>
+                        <li><a href="#" style="color: black;">Quando as panteras não eram negras, de Fabio Morábito</a>
+                        </li>
+                        <li><a href="#" style="color: black;">Tarás Bulba, de Nikolai Gógol</a></li>
+                        <li><a href="#" style="color: black;">Terrapreta, de Rita Carelli</a></li>
+                        <li><a href="#" style="color: black;">Tio Petros e a Conjectura de Goldbach, de Apostolos
+                                Doxiadisudo</a></li>
+                        <li><a href="#" style="color: black;">Tudo (e mais um pouco) Poesia reunida (1971-2016), de
+                                Chacal</a></li>
+                        <li><a href="#" style="color: black;">Um pequeno Herói, de Fiódor Dostoiévsk</a></li>
+                        <li><a href="#" style="color: black;">Uma noite em cinco atos, de Alberto Martins</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    {% endblock conteudo %}
+</main>

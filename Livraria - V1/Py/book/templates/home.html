@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<style>
+  :root {
+      --btn-secondary-color: black;
+        }
+.container-livros{
+  height: 100%;
+  width: 100%;
+  color: black;
+  padding: 15px;
+}
+
+.topo-site  {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  flex-wrap: wrap;
+  display: inline-block;
+}
+
+.btn{
+  justify-content: center;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 5px;
+}
+</style>
+<div class="container-livros">
+{% for l in livro  %}
+
+
+<div class="card mx-3 mb-3" style="width: 16rem;">
+    {% load static %}
+    <img src="{% static l.imagem %}" class="card-img-top" alt="..." height="300px">
+    <div class="card-body">
+      <h5 class="card-title"> {{l.titulo}} </h5>
+      <p class="card-text"> <i>Autor</i> {{l.autor}}</p>
+      <p class="class-descricao">{{d.descricao}}</p>
+      <p class="card-text"> <i>Editora</i> {{l.editora}}</p>
+      <h5>R${{l.preco}}</h5>
+      <a href="#" class="btn btn-primary float-top">ADICONAR AO CARRINHO</a>
+      <a href="#" class="btn btn-primary float-top">COMPRAR AGORA</a>
+
+
+    </div>
+  </div>
+{% empty %}
+  <div> Ainda não há livros cadastrados. </div>
+{% endfor %}
+</div>
+{% endblock conteudo %}
+
+</main>
+

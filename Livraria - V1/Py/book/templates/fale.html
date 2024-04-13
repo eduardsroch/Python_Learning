@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<style>
+
+.mb-3 {
+    margin: 50px;
+    
+}
+
+.container-contato {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        flex-wrap: wrap;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0;   
+    }
+
+.container-contato h5 {
+        text-transform: uppercase;
+    }
+
+.item {
+
+        padding: 10px;
+        margin: 5px;
+    }
+
+.container-contato hr {
+        color: rgb(88, 88, 88);
+    }
+
+</style>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    <br>
+    <button type="button" class="btn btn-primary btn-sm">ENVIAR</button>
+
+  </div>
+
+<div class="container-contato">
+    <div class="item"><h5>Endereço postal</h5>
+        Editora 34 Ltda. <br>
+        Rua Hungria, 592 - Jardim Europa <br>
+        São Paulo - SP - Brasil <br>
+        CEP 01455-000
+    </div>
+    <hr>
+    <div class="item"><h5>Vendas</h5>
+        vendas@editora34.com.br <br>
+        Assessoria de imprensa: imprensa@editora34.com.br <br>
+        Atendimento ao professor: professor@editora34.com.br <br>
+    </div>
+    <hr>
+    <div class="item"><h5>Contato</h5>
+        Site/Pedidos: site@editora34.com.br<br>
+        Tel (11) 3811-6777 <br>
+        Fax (11) 3811-6779 <br>
+        WhatsApp (11) 97319-4785</td>
+    </div>
+</div>
+
+{% endblock conteudo %}
+</main>

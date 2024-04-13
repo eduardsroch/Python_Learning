@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+
+<style>
+
+
+    #professor {
+
+        padding: 70px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, Helvetica;
+        text-align: justify;
+        display: flex;
+        display: inline-block;
+        justify-content: space-between;
+
+    }
+
+    #titulo-professor {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+</style>
+
+<main>
+    <div id="professor">
+        <h4 id="titulo-professor">Imprensa</h4>
+        <p>
+
+            A assessoria de imprensa é responsável pelo relacionamento entre a Editora 34 e profissionais da mídia.
+
+            Entre nossas principais atividades estão a divulgação de lançamentos e títulos em preparação, a
+            intermediação entre autores e jornalistas e o fornecimento de material auxiliar, como releases, imagens de
+            capa, ilustrações, fotos, biografias, cronogramas etc.
+
+            Além disso, dispomos de um mailing para informar nossas atividades periodicamente e com a maior antecedência
+            possível.
+
+            Caso queira se comunicar com nossos autores, enderece sua carta ou mensagem eletrônica aos cuidados desta
+            assessoria, que a reencaminhará imediatamente ao destinatário indicado.
+
+            A Editora 34 não tem permissão para divulgar diretamente e-mail, endereço nem telefones de seus
+            colaboradores.
+
+            Para mais informações e cadastro no mailing, escreva para <a href="mailto:imprensa@editora34.com.br">imprensa@editora34.com.br</a>.
+        </p>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    {% endblock conteudo %}
+</main>

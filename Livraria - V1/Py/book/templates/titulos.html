@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<style>
+
+.container-autor{
+  height: 100%;
+  width: 100%;
+  color: black;
+  padding: 70px;
+}
+
+.card-text{
+  font-size: 18px;
+}
+
+</style>
+<div class="container-autor">
+{% for t in livro  %}
+<div class="card mx-3 mb-3" style="width: 12rem;">
+    <div class="card-body">
+      <h4 class="card-text"> Titulo {{t.titulo}}</h4>
+    </div>
+  </div>
+{% empty %}
+  <div> Ainda não há Títutlos cadastrados. </div>
+{% endfor %}
+</div>
+{% endblock conteudo %}
+
+</main>
+

@@ -1,0 +1,49 @@
+# Arquivos gerados pelo Python
+*.pyc
+__pycache__/
+
+# Banco de dados SQLite
+db.sqlite3
+
+# Arquivos de mídia (imagens, uploads, etc.)
+media/
+
+# Arquivos de backup
+*.bak
+
+# Configurações específicas do ambiente de desenvolvimento
+.idea/
+.vscode/
+*.env
+*.venv
+env/
+venv/
+
+# Arquivos gerados por ferramentas de construção
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Logs e relatórios de testes
+*.log
+htmlcov/
+.tox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Arquivos de configuração específicos de IDEs
+*.iws
+*.sage.py
+*.ipynb_checkpoints
+*.python-version
+
+# Outros
+*.bak
+*.swp
+*.swo
+*.sage.py
+*.ipynb_checkpoints

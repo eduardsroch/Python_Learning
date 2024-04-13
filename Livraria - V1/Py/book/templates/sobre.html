@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<style>
+
+.topo-site  {
+  background-color: black;
+  padding: 30px;
+}
+
+.mb-3 {
+    margin: 50px;
+    
+}
+
+#sobre-editora {
+    
+    padding: 70px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica;
+    text-align: justify;
+    padding-top: 0;
+    display: flex;
+    display: inline-block;
+
+
+}
+
+#titulo-sobre {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    display: inline-block;
+
+}
+
+.btn-group {
+    align-items: right;
+    padding: 10px;
+    float: right;
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+
+}
+
+</style>
+
+<main>
+<div id="sobre-editora">
+
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <a href="{% url 'abouteditora'%}"><button type="button" class="btn btn-primary">Language: en</button></a>
+        <a href="{% url 'sobre'%}"><button type="button" class="btn btn-secondary">Idioma: pt-br</button></a>
+      </div>
+      <br>
+      <br>
+      <h4 id="titulo-sobre"> SOBRE A EDITORA</h4>
+    <p>
+        Fundada em 1992 com o lançamento de O que é a filosofia?, de Gilles Deleuze e Félix Guattari, a Editora 34 possui hoje mais de 500 títulos em seu catálogo, que abrange as áreas de Ficção, Filosofia, Arte, Teoria Literária, Ciências Sociais, História, Psicologia e Psicanálise, Economia, Música, Poesia e Literatura Infanto-Juvenil, combinando textos clássicos e de referência com obras de ponta sobre temas contemporâneos.
+
+Ao lado de nomes fundamentais como Dante, Cervantes e Goethe, e de grandes escritores do século XX, como Kafka e Brecht, a Editora 34 mantém uma linha voltada para autores brasileiros, novos e consagrados, tanto na prosa como na poesia.
+A rica literatura da Rússia e do Leste Europeu é representada pela Coleção Leste, que tem publicado obras de Dostoiévski, Gógol, Tolstói, Púchkin e Tchekhov, entre outros, sempre vertidos do original por tradutores como Boris Schnaiderman e Paulo Bezerra.
+No campo da Filosofia, a Coleção Trans reúne, além de vários títulos de Deleuze e Guattari, obras de Jacques Rancière, Bruno Latour, Pierre Lévy e Paul Virilio, para citar alguns nomes, desenhando um quadro abrangente do pensamento contemporâneo.
+Com mais de 25 títulos publicados, a Coleção Todos os Cantos traz biografias de importantes personagens de nossa música, entre os quais Dorival Caymmi, Luiz Gonzaga, Mario Reis e Jackson do Pandeiro; ensaios sobre os mais variados gêneros — choro, samba, jazz, blues, rock etc. — e obras de história da MPB de renomados pesquisadores como Carlos Calado, Zuza Homem de Mello e Jairo Severiano.
+Já a Coleção Espírito Crítico vem formando uma verdadeira “biblioteca de referência”, com ênfase nos Estudos Literários, apresentando obras de Antonio Candido, Alfredo Bosi, Roberto Schwarz, Gilda de Mello e Souza, Davi Arrigucci Jr., Georg Lukács, Erich Auerbach, Theodor Adorno e Walter Benjamin, entre outros.
+Para os jovens leitores, a Editora 34 combina a ficção estrangeira de Frances Hodgson Burnett, Gianni Rodari e Roald Dahl com a poesia de escritores brasileiros como Tatiana Belinky, Braulio Tavares e Duda Machado.
+São também destaques no catálogo da editora os estudos sobre o Modernismo de Aracy Amaral e Marta Rossetti Batista, os livros de José Ramos Tinhorão sobre música e cultura popular e os de Evaldo Cabral de Mello sobre a história do Nordeste açucareiro, além dos ensaios de Luiz Carlos Bresser-Pereira sobre economia e desenvolvimento no Brasil.
+    </p>
+    <p>
+        O nome da Editora 34 e o quadrado impresso na primeira página de seus livros têm origem numa revista de literatura editada no Rio de Janeiro, a 34 Letras, cuja equipe, aliada a um grupo de São Paulo, constituiu o núcleo original da editora.
+A revista teve sete números publicados, de setembro de 1988 a março de 1990, e seu nome foi inspirado no “quadrado mágico” de uma famosa gravura de Albrecht Dürer, de 1514, que é citada no romance Doutor Fausto, de Thomas Mann.
+O quadrado mágico em questão é subdividido em 16 quadrados menores, com os números de 1 a 16 em cada um deles, e cuja soma em qualquer sentido — horizontal, vertical, diagonal — é sempre igual a 34.
+Embora sua origem seja incerta, sabe-se que o quadrado mágico surgiu em tempos remotos e aparece em diferentes culturas, como a chinesa, a indiana e a árabe. No caso da Editora 34, ele foi pensado como um símbolo de que existem vários caminhos possíveis para se chegar a um objetivo comum.
+    </p>
+</div>
+
+    {% endblock conteudo %}
+</main>
